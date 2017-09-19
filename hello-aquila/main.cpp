@@ -13,7 +13,6 @@
 #include "aquila/source/generator/WhiteNoiseGenerator.h"
 #include "aquila/source/generator/TriangleGenerator.h"
 
-
 int main(int argc, const char * argv[]) {
 
     // Write some white noise out to a file to make sure it works..
