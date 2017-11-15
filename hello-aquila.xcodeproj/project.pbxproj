@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		731ACFBF1FBC480A0075B056 /* SDL2_mixer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 731ACFBE1FBC480A0075B056 /* SDL2_mixer.framework */; };
+		731ACFC11FBC48790075B056 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 731ACFC01FBC48790075B056 /* SDL2.framework */; };
 		73607D441ED58BAB001B33A6 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 73607D431ED58BAB001B33A6 /* main.cpp */; };
 		73607D4C1ED59006001B33A6 /* libAquila.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 73607D4B1ED59006001B33A6 /* libAquila.a */; };
 /* End PBXBuildFile section */
@@ -24,6 +26,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		731ACFBE1FBC480A0075B056 /* SDL2_mixer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SDL2_mixer.framework; sourceTree = "<group>"; };
+		731ACFC01FBC48790075B056 /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SDL2.framework; sourceTree = "<group>"; };
 		73607D401ED58BAB001B33A6 /* hello-aquila */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "hello-aquila"; sourceTree = BUILT_PRODUCTS_DIR; };
 		73607D431ED58BAB001B33A6 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		73607D4B1ED59006001B33A6 /* libAquila.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAquila.a; path = ../../../../usr/local/lib/libAquila.a; sourceTree = "<group>"; };
@@ -35,7 +39,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				731ACFC11FBC48790075B056 /* SDL2.framework in Frameworks */,
 				73607D4C1ED59006001B33A6 /* libAquila.a in Frameworks */,
+				731ACFBF1FBC480A0075B056 /* SDL2_mixer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +76,8 @@
 		73607D4A1ED59006001B33A6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				731ACFC01FBC48790075B056 /* SDL2.framework */,
+				731ACFBE1FBC480A0075B056 /* SDL2_mixer.framework */,
 				73607D4D1ED5924D001B33A6 /* libUnitTest++.a */,
 				73607D4B1ED59006001B33A6 /* libAquila.a */,
 			);
@@ -245,6 +253,10 @@
 		73607D481ED58BAB001B33A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				HEADER_SEARCH_PATHS = /usr/local/include;
 				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -254,6 +266,10 @@
 		73607D491ED58BAB001B33A6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				HEADER_SEARCH_PATHS = /usr/local/include;
 				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
